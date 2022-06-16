@@ -1,0 +1,25 @@
+header {
+    background-color: rgb(78, 190, 255);
+    height: 5em;
+    padding: 1.5em;
+  }
+  caption{
+      font-size: 2em;
+  }
+  h1{
+      text-align: center;
+      text-shadow: -3px 3px 1px rgb(175, 243, 255);
+      color: rgb(0, 0, 136);
+  }
+  table{
+      table-layout: fixed;
+      width: 100%;
+      border-collapse: collapse;
+      border: 3px solid brown;
+  }
+  td,th{
+      border: 1px solid brown;
+  }
+  tbody td{
+      text-align: center;
+  }

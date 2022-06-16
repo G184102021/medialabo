@@ -1,0 +1,41 @@
+html {
+    font-family: 'Helvetica neue', Arial, 'fantasy';
+  }
+header {
+    background-color: rgb(25, 240, 140);
+    height: 5em;
+    padding: 1.5em;
+  }
+  p.purpose{
+      border: 3px dotted cyan;
+      padding: 10px;
+      margin: 15px;
+      width: auto;
+      height: auto;
+      background: lightcyan;
+  }
+  h1{
+      text-shadow: -3px 3px 1px rgb(255, 255, 255);
+  }
+  h2{
+      color: rgb(0, 196, 186);
+  }
+  h3{
+      color: rgb(0, 119, 255);
+  }
+  span{
+      background-color: lightgreen;
+  }
+  em.title{
+      color: blue;
+  }
+  a:link{
+      color: rgb(67, 196, 247);
+  }
+  a:visited{
+      color: lightgreen;
+  }
+  a:hover{
+      text-decoration: none;
+      color: aqua;
+  }
