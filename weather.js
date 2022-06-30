@@ -49,3 +49,15 @@ let data = {
 console.log(data.name);
 console.log(data.main.temp_max);
 console.log(data.main.temp_min);
+
+let to = document.querySelector('span#toshi');
+to.textContent = data.name;
+let te = document.querySelector('span#tennki');
+let tenn = data.weather;
+
+let saikou = document.querySelector('span#saikoukionn');
+saikou.textContent = data.main.temp_max;
+let saitei = document.querySelector('span#saiteikionn');
+saitei.textContent = data.main.temp_min;
+let shi = document.querySelector('span#shitsudo');
+shi.textContent = data.clouds.all;
