@@ -53,7 +53,8 @@ console.log(data.main.temp_min);
 let to = document.querySelector('span#toshi');
 to.textContent = data.name;
 let te = document.querySelector('span#tennki');
-let tenn = data.weather;
+let tenn = data.weather[0];
+te.textContent = tenn.description;
 
 let saikou = document.querySelector('span#saikoukionn');
 saikou.textContent = data.main.temp_max;
