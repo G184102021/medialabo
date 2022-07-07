@@ -46,6 +46,10 @@ let data = {
 };
 
 ////////// 課題3-2 ここからプログラムを書こう
+let b = document.querySelector('#kennsaku');
+b.addEventListener('click',kekka);
+
+function kekka(){
 console.log(data.name);
 console.log(data.main.temp_max);
 console.log(data.main.temp_min);
@@ -62,3 +66,4 @@ let saitei = document.querySelector('span#saiteikionn');
 saitei.textContent = data.main.temp_min;
 let shi = document.querySelector('span#shitsudo');
 shi.textContent = data.clouds.all;
+}

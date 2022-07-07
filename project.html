@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="project.css">
         <script src="weather.js" defer></script>
     </head>
-    <body>
+    <>
         <header>
             <h1>世界の天気　検索ページ</h1>
         </header>
@@ -17,6 +17,20 @@
         <p>最高気温(℃)：22</p>
         <p>最低気温(℃)：16</p>
         <p>湿度(%)：56</p>-->
+
+        <h2>都市の指定</h2>
+        <p><input type="radio" name="to" id="tokyo" value="1"><label for="tokyo">東京</label>
+           <input type="radio" name="to" id="newyork" value="2"><label for="newyork">ニューヨーク</label>
+        <input type="radio" name="to" id="losangeles" value="3"><label for="losangeles">ロサンゼルス</label>
+           <input type="radio" name="to" id="london" value="4"><label for="london">ロンドン</label>
+        <input type="radio" name="to" id="pekinn" value="5"><label for="pekinn">北京</label>
+           <input type="radio" name="to" id="pari" value="6"><label for="pari">パリ</label>
+        <input type="radio" name="to" id="singapore" value="7"><label for="singapore">シンガポール</label>
+           <input type="radio" name="to" id="moscow" value="8"><label for="moscow">モスクワ</label>
+        <input type="radio" name="to" id="sydney" value="9"><label for="sydney">シドニー</label>
+        </p>
+
+        <p><button id="kennsaku">再検索</button></p>
 
         <table>
             <caption><em>検索結果</em></caption>
@@ -35,6 +49,7 @@
                 <td><span id=shitsudo></span></td>
             </tr>
         </table>
+
 
     </body>
 </html>
