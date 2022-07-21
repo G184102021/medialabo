@@ -67,28 +67,28 @@ function kekka(){
 
 function showResult(resp){
 
-let data = resp.data;
+  let data = resp.data;
 
-if(typeof data === 'string'){
-  data = JSON.parse(data);
-}
+  if(typeof data === 'string'){
+    data = JSON.parse(data);
+  }
 
-console.log(data.name);
-console.log(data.main.temp_max);
-console.log(data.main.temp_min);
+  console.log(data.name);
+  console.log(data.main.temp_max);
+  console.log(data.main.temp_min);
 
-let to = document.querySelector('span#toshi');
-to.textContent = data.name;
-let te = document.querySelector('span#tennki');
-let tenn = data.weather[0];
-te.textContent = tenn.description;
+  let to = document.querySelector('span#toshi');
+  to.textContent = data.name;
+  let te = document.querySelector('span#tennki');
+  let tenn = data.weather[0];
+  te.textContent = tenn.description;
 
-let saikou = document.querySelector('span#saikoukionn');
-saikou.textContent = data.main.temp_max;
-let saitei = document.querySelector('span#saiteikionn');
-saitei.textContent = data.main.temp_min;
-let shi = document.querySelector('span#shitsudo');
-shi.textContent = data.clouds.all;
+  let saikou = document.querySelector('span#saikoukionn');
+  saikou.textContent = data.main.temp_max;
+  let saitei = document.querySelector('span#saiteikionn');
+  saitei.textContent = data.main.temp_min;
+  let shi = document.querySelector('span#shitsudo');
+  shi.textContent = data.clouds.all;
 }
 
 function showError(err){
