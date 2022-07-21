@@ -50,6 +50,29 @@ let b = document.querySelector('#kennsaku');
 b.addEventListener('click',kekka);
 
 function kekka(){
+  let id;
+  let rs = document.querySelectorAll('input[name="to"]');
+  for(let r of rs){
+    if(r.checked){
+      id = r.value;
+    }
+  }
+  let url = "https://www.nishita-lab.org/web-contents/jsons/openweather/"+id+".json";
+
+  axios.get(url)
+      .then(showResult)
+      .catch(showError)
+      .then(finish);
+}
+
+function showResult(resp){
+
+let data = resp.data;
+
+if(typeof data === 'string'){
+  data = JSON.parse(data);
+}
+
 console.log(data.name);
 console.log(data.main.temp_max);
 console.log(data.main.temp_min);
@@ -66,4 +89,11 @@ let saitei = document.querySelector('span#saiteikionn');
 saitei.textContent = data.main.temp_min;
 let shi = document.querySelector('span#shitsudo');
 shi.textContent = data.clouds.all;
+}
+
+function showError(err){
+  console.log(err);
+}
+function finish(){
+  console.log('Ajax 通信が終わりました');
 }

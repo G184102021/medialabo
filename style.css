@@ -6,13 +6,21 @@ header {
     height: 5em;
     padding: 1.5em;
   }
-  p.purpose{
+  p.purpose,p.kannsou{
       border: 3px dotted cyan;
       padding: 10px;
       margin: 15px;
       width: auto;
       height: auto;
       background: lightcyan;
+  }
+  p.kadai{
+    border: 3px double rgb(0, 218, 145);
+    padding: 10px;
+    margin: 15px;
+    width: auto;
+    height: auto;
+    background: rgb(200, 255, 228);
   }
   h1{
       text-shadow: -3px 3px 1px rgb(255, 255, 255);
